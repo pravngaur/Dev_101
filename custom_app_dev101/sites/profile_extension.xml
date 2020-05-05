@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    
+    <type-extension type-id="Profile">
+        
+        <custom-attribute-definitions>
+            
+            <attribute-definition attribute-id="weather_preference">
+                <display-name xml:lang="x-default">This attribute will hold the customer's weather selection</display-name>
+                <description xml:lang="x-default">possible values: winter,summer,rain</description>
+                <type>enum-of-string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">WINTER</display>
+                        <value>WINTER</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">SUMMER</display>
+                        <value>SUMMER</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">RAIN</display>
+                        <value>RAIN</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            
+            <attribute-group group-id="custom">
+                <display-name xml:lang="x-default">custom</display-name>
+                <attribute attribute-id="weather_preference"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+
+</metadata>
