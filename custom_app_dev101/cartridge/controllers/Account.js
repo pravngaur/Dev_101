@@ -42,6 +42,7 @@ function (req, res, next) {
         email: profileForm.customer.email.value,
         confirmEmail: profileForm.customer.emailconfirm.value,
         password: profileForm.login.password.value,
+        weatherPref: profileForm.customer.weatherPref.htmlValue,
         profileForm: profileForm
     };
     if (profileForm.valid) {
@@ -85,7 +86,7 @@ function (req, res, next) {
                     profile.setPhoneHome(formInfo.phone);
                     // TODO: In productionize code, you ideally should store 'WINTER' in custom preferences(or someehere else as config).
                     // Should not hard code it
-                    profile.custom.weather_preference = 'WINTER';
+                    profile.custom.weather_preference = formInfo.weatherPref;
                 });
 
                 // Send account edited email
