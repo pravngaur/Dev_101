@@ -3,11 +3,21 @@ This repo serves as a reference point to all the developers who aspire to learn 
 Also, each branch in this repo ties back to the sessions in 'Developer Cert Prep' [Webinar Series](https://sfdc.co/devcertprepdetails)
 
 ## Challenge: Brand DIY Business Requirement
-This repo takes a practical approach to learning, let me introduce our fictious brand DIY -- they are a high street retailer.  DIY Brand's custom requirement is to change the product search behaviour based on the customer's local weather conditions, i.e. in winters, customers should get woolen products as search results, while in summer cottons & sneakers should appear as search results.
+This repo takes a practical approach to learning, let me introduce our fictious brand DIY -- they are a high street retailer.  DIY Brand has following custom requirements: 
 
+* Change the product search behaviour based on the customer's local weather conditions i.e. in winters, customers should get woolen products as search results while in summers, cottons & sneakers should appear as search results.
 * You also need enable the shoopers to set their weather preferences in their account.
 * Create a Toggle switch by which if required, search behaviour can be reverted back to the default one, by supressing this customization.
 * If customer has not set the account preference, then call a external web service to get the weather details for the customer's location of request.
+
+## High Level Approach:
+* Exten the profile object to accommodate the weather preference, create a custom attribute.
+* Extend the Account controller to persist & retrieve this preference.
+* Make changes to the required ISMLs, Forms, Models, Resource Properties.
+* Implement a custom preference toggle to turn on/off this custom behaviour.
+* Implement an external service integration, if preference not set in account.
+* Make the changes to the search behaviour based on account preference or service response.
+
 
 ## Branch Details:
 Each branch in this repo contains the changes required to a specific section/component of SFRA(Controllers, ISML...) or Platform(Metadata, Services...).
