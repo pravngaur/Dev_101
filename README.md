@@ -1,16 +1,29 @@
-# Salesforce B2C Commerce Developer 101 : ISMLs
+# Developer 101 : Controllers
 
-This branch has the changes required to support the DIY's requirements. We will implement the following parts of the overall approach:
+This branch has the changes required to support the following DIY's requirements. We will implement the following parts of the overall approach:
 
-* Make changes to the required ISMLs, Forms, Models, Resource Properties.
+* Extend the profile object to accommodate the weather preference, create a custom attribute.
+* Extend the Account controller to persist & retrieve this preference.
 
 # Implementation Changes to be done:
 
-> First complete the [tasks](https://github.com/pravngaur/Dev_101/blob/DIY_Controllers/README.md#implementation-changes-to-be-done) mentioned in DIY_Controllers branch.
+* Create a custom cartridge custom_app_dev101
+* Update the cartridge path to: custom_app_dev101:app_storefront_base	
+* Extended the Profile System Object to have an additional attribute which holds the value for product's preferred season of usage. Enum of Strings: WINTER, SUMMER, RAIN. 	
+* Inherit the Account.js controller in the new cartridge.
 
-* Override the editProfileForm.isml & profileCard.isml in your custom cartridge -- this is to accomodate the additional custom attribute to be persisted & shown.
-* Add the required properties(for the new attribute) in the resource bundles.
-* Update account.js model to accommodate the new attribute -- this is to show the value of the attribute on profile page.
-* Update the profile.xml form to persist the customer's selection in Profile's custom attribute. Remember the possible values a customer can choose should match to the values of enum-of-string in the profile metadata.
+_Please try doing these changes yourself first & then compare with this branch._
 
-_Please try doing these changes yourself first & then compare with this branch. No config changes required for this task._
+# Configuration changes required:
+
+#### Adding custom profile attribute: 
+
+* You can do that by importing the profile_extension.xml file in sites folder.	
+* Or do that manually by updating the profile system object to add a custom attribute named 'weather_preference' as enum of strings type:	
+
+![Attribute config](https://github.com/pravngaur/Dev_101/blob/DIY_Controllers/custom_app_dev101/docs/profile_attr_1.png)	
+
+Values:	
+
+![Attribute values](https://github.com/pravngaur/Dev_101/blob/DIY_Controllers/custom_app_dev101/docs/profile_attr_2.png)
+

@@ -86,7 +86,7 @@ function (req, res, next) {
                     profile.setPhoneHome(formInfo.phone);
                     // TODO: In productionize code, you ideally should store 'WINTER' in custom preferences(or someehere else as config).
                     // Should not hard code it
-                    profile.custom.weather_preference = formInfo.weatherPref;
+                    profile.custom.weather_preference = 'WINTER';
                 });
 
                 // Send account edited email
