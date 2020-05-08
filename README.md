@@ -6,7 +6,7 @@ This branch has the changes required to support the DIY's requirements. We will 
 
 # Implementation Changes to be done:
 
-> First complete the tasks mentioned in [DIY_Controllers](https://github.com/pravngaur/Dev_101/tree/DIY_Controllers)
+> First complete the [tasks](https://github.com/pravngaur/Dev_101/blob/DIY_Controllers/README.md#implementation-changes-to-be-done) mentioned in DIY_Controllers branch.
 
 * Override the editProfileForm.isml & profileCard.isml in your custom cartridge -- this is to accomodate the additional custom attribute to be persisted & shown.
 * Add the required properties(for the new attribute) in the resource bundles.
