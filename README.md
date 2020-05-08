@@ -1,6 +1,6 @@
 # Dev 101
 This repo serves as a reference point to all the developers who aspire to learn B2C Commerce Cloud -- understand the application development & exposure to all the essential platform features.
-Also, each branch in this repo ties back to the sessions in 'Developer Cert Prep' [Webinar Series(https://sfdc.co/devcertprepdetails)
+Also, each branch in this repo ties back to the sessions in 'Developer Cert Prep' [Webinar Series](https://sfdc.co/devcertprepdetails)
 
 ## Challenge: Brand DIY Business Requirement
 This repo takes a practical approach to learning, let me introduce our fictious brand DIY -- they are a high street retailer.  DIY Brand's custom requirement is to change the product search behaviour based on the customer's local weather conditions, i.e. in winters, customers should get woolen products as search results, while in summer cottons & sneakers should appear as search results.
