@@ -16,10 +16,10 @@ This branch has the changes required to support the following DIY's requirements
 1) Adding custom profile attribute: you can do that by importing the profile_extension.xml file in sites folder.
 Or do that manually by updating the profile system object to add a custom attribute named 'weather_preference' as enum of strings type:
 
-(https://github.com/pravngaur/Dev_101/blob/DIY_Controllers/custom_app_dev101/docs/profile_attr_1.png)
+![Attribute config](https://github.com/pravngaur/Dev_101/blob/DIY_Controllers/custom_app_dev101/docs/profile_attr_1.png)
 
 Values:
 
-(https://github.com/pravngaur/Dev_101/blob/DIY_Controllers/custom_app_dev101/docs/profile_attr_2.png)
+![Attribute values](https://github.com/pravngaur/Dev_101/blob/DIY_Controllers/custom_app_dev101/docs/profile_attr_2.png)
 
 > Please try doing these changes yourself first & then compare with this branch.
