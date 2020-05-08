@@ -1,6 +1,6 @@
 # Dev 101
 This repo serves as a reference point to all the developers who aspire to learn B2C Commerce Cloud -- understand the application development & exposure to all the essential platform features.
-Also, each branch in this repo ties back to the sessions in 'Developer Cert Prep' [Webinar Series] (https://sfdc.co/devcertprepdetails)
+Also, each branch in this repo ties back to the sessions in 'Developer Cert Prep' [Webinar Series(https://sfdc.co/devcertprepdetails)
 
 ## Challenge: Brand DIY Business Requirement
 This repo takes a practical approach to learning, let me introduce our fictious brand DIY -- they are a high street retailer.  DIY Brand's custom requirement is to change the product search behaviour based on the customer's local weather conditions, i.e. in winters, customers should get woolen products as search results, while in summer cottons & sneakers should appear as search results.
@@ -12,10 +12,10 @@ This repo takes a practical approach to learning, let me introduce our fictious 
 ## Branch Details:
 Each branch in this repo contains the changes required to a specific section/component of SFRA(Controllers, ISML...) or Platform(Metadata, Services...).
 
-[DIY_Controllers](https://github.com/pravngaur/Dev_101/tree/DIY_Controllers) : Controller & Metadata changes.
-[DIY_ISML](https://github.com/pravngaur/Dev_101/tree/DIY_ISML) : changes for ISML, models, forms & learn localization.
-[DIY_Search](https://github.com/pravngaur/Dev_101/tree/DIY_Search) : Search related changes.
-[DIY_Weather Service](https://github.com/pravngaur/Dev_101/tree/DIY_WeatherService) : Integrate with an external service using the Service Framework.
+* [DIY_Controllers](https://github.com/pravngaur/Dev_101/tree/DIY_Controllers) : Controller & Metadata changes.
+* [DIY_ISML](https://github.com/pravngaur/Dev_101/tree/DIY_ISML) : changes for ISML, models, forms & learn localization.
+* [DIY_Search](https://github.com/pravngaur/Dev_101/tree/DIY_Search) : Search related changes.
+* [DIY_Weather Service](https://github.com/pravngaur/Dev_101/tree/DIY_WeatherService) : Integrate with an external service using the Service Framework.
 
 > This repo has all the changes for the DIY's business requirement, idea is that you try on your own first & compare your implementation with this repo.
 
