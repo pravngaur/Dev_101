@@ -15,6 +15,7 @@ This repo takes a practical approach to learning, let me introduce our fictious 
 * Extend the Account controller to persist & retrieve this preference.
 * Make changes to the required ISMLs, Forms, Models, Resource Properties.
 * Implement a custom preference toggle to turn on/off this custom behaviour.
+* Extend the product system object to have a custom attribute which denotes the preferred weather for this product. Update the searchable attributes.
 * Implement an external service integration, if preference not set in account.
 * Make the changes to the search behaviour based on account preference or service response.
 
