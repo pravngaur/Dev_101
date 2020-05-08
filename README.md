@@ -1,4 +1,4 @@
-# Developer 101 : Controllers
+# Salesforce B2C Commerce Developer 101 : Controllers
 
 This branch has the changes required to support the following DIY's requirements. We will implement the following parts of the overall approach:
 
