@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <type-extension type-id="Product">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="preferred_season">
+                <display-name xml:lang="x-default">Preferred Season</display-name>
+                <description xml:lang="x-default">This attribute is used via the customizations to refine the product search results based on the customer profile attribute.</description>
+                <type>enum-of-string</type>
+                <localizable-flag>false</localizable-flag>
+                <site-specific-flag>false</site-specific-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <visible-flag>false</visible-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <order-required-flag>false</order-required-flag>
+                <externally-defined-flag>false</externally-defined-flag>
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">WINTER</display>
+                        <value>WINTER</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">SUMMER</display>
+                        <value>SUMMER</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">RAIN</display>
+                        <value>RAIN</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="custom">
+                <display-name xml:lang="x-default">custom</display-name>
+                <attribute attribute-id="preferred_season"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+</metadata>
