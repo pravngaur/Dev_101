@@ -9,16 +9,27 @@
 var baseModule = module.superModule;
 
 /**
- * Sets the additional search term based on the weather preference of customer set in her/his account
+ * @description
+ * Sets the additional search term based on the weather preference of customer set in her/his account.
+ * If the account preference is set, use that as the search query param(q).
+ * If preference is not set, then call the weather API.
  *
  * @param {dw.catalog.ProductSearchModel} productSearch - Product search object
  * @returns {void}
  */
 function updateSearchTerm(productSearch) {
     var isPrefEnabled = dw.system.Site.current.preferences.custom && dw.system.Site.current.preferences.custom.enableWeatherSearchTerm;
-    if (customer.profile && customer.profile.custom.weather_preference && isPrefEnabled) {
-        var weatherPreference = customer.profile.custom.weather_preference;
-        productSearch.setSearchPhrase(weatherPreference);
+    if (isPrefEnabled) {
+        if (customer.profile && 'SUMMER'.equals(customer.profile.custom.weather_preference) && 'WINTER'.equals(customer.profile.custom.weather_preference) && 'RAIN'.equals(customer.profile.custom.weather_preference)) { // if profile preference is set
+            var weatherPreference = customer.profile.custom.weather_preference;
+            productSearch.setSearchPhrase(weatherPreference);
+        } else { // call the weather API service
+            var weatherService = require('../services/weatherAPI/callWeatherService');
+            var jsonResponse = weatherService().call('Delhi');
+            if (jsonResponse.msg && jsonResponse.msg === 'OK') {
+                productSearch.setSearchPhrase(jsonResponse.object);
+            }
+        }
     }
 }
 
