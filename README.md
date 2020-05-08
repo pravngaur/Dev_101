@@ -19,7 +19,7 @@ The value of this attribute should be same as of the profile attribute.
 * You can do that by importing the product_metadata.xml file in sites folder.	
 * Or do that manually by updating the product system object to add a custom attribute named 'preferred_season' as enum of strings type:	
 
-![Attribute config](https://github.com/pravngaur/Dev_101/blob/DIY_Search/custom_app_dev101/docs/Screenshot%202020-05-08%20at%203.29.01%20PM.png)	
+![Attribute config](https://github.com/pravngaur/Dev_101/blob/DIY_WeatherService/custom_app_dev101/docs/prod_attr.png)	
 
 Values:	
 
