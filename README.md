@@ -21,9 +21,8 @@ The value of this attribute should be same as of the profile attribute.
 
 ![Attribute config](https://github.com/pravngaur/Dev_101/blob/DIY_WeatherService/custom_app_dev101/docs/prod_attr.png)	
 
-Values:	
-
-![Attribute values](https://github.com/pravngaur/Dev_101/blob/DIY_Search/custom_app_dev101/docs/Screenshot%202020-05-08%20at%203.36.46%20PM.png)
+Values:	'WINTER', 'SUMMER', 'RAIN'
+_while setting the values, reemove the quotes, keep key & value same for enum entries._
 
 2) **Extending sitePreferences system object to have an additional attribute 'enableWeatherSearchTerm': 
 
