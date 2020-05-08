@@ -13,7 +13,7 @@ _Please try doing these changes yourself first & then compare with this branch._
 
 # Configuration changes required:
 
-#### Extending product system object to have an additional attribute 'preferred_season': 
+1) **Extending product system object to have an additional attribute 'preferred_season': 
 The value of this attribute should be same as of the profile attribute.
 
 * You can do that by importing the product_metadata.xml file in sites folder.	
@@ -25,7 +25,7 @@ Values:
 
 ![Attribute values](https://github.com/pravngaur/Dev_101/blob/DIY_Search/custom_app_dev101/docs/Screenshot%202020-05-08%20at%203.36.46%20PM.png)
 
-#### Extending sitePreferences system object to have an additional attribute 'preferred_season': 
+2) **Extending sitePreferences system object to have an additional attribute 'enableWeatherSearchTerm': 
 
 * You can do that by importing the custom_preference.xml file in sites folder.	
 * Or do that manually by updating the sitePreferences system object to add a custom attribute named 'enableWeatherSearchTerm' as boolean type:	
