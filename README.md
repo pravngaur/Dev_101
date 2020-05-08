@@ -1,4 +1,4 @@
-# Dev 101
+# Developer 101
 This repo serves as a reference point to all the developers who aspire to learn B2C Commerce Cloud -- understand the application development & exposure to all the essential platform features.
 Also, each branch in this repo ties back to the sessions in 'Developer Cert Prep' [Webinar Series](https://sfdc.co/devcertprepdetails)
 
