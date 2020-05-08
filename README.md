@@ -12,4 +12,14 @@ This branch has the changes required to support the following DIY's requirements
 * Extended the Profile System Object to have an additional attribute which holds the value for product's preferred season of usage. Enum of Strings: WINTER, SUMMER, RAIN. 
 * Inherit the Account.js controller in the new cartridge.
 
+# Configuration changes required:
+1) Adding custom profile attribute: you can do that by importing the profile_extension.xml file in sites folder.
+Or do that manually by updating the profile system object to add a custom attribute named 'weather_preference' as enum of strings type:
+
+(https://github.com/pravngaur/Dev_101/blob/DIY_Controllers/profile_attr_1.png?raw=true)
+
+Values:
+
+(https://github.com/pravngaur/Dev_101/blob/DIY_Controllers/profile_attr_2.png?raw=true)
+
 > Please try doing these changes yourself first & then compare with this branch.
