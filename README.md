@@ -16,7 +16,7 @@ _Please try doing these changes yourself first & then compare with this branch._
 # Configuration changes required:
 
 1) **Extending ServiceCredential system object to have an additional attribute 'weatherAPIKey': 
-_For the service that i have used, it is required to send an APIkey in request for authentication. OOTB ServiceCredential does not has this attribute. Other attributes might be used if you do not want to extend the object._
+*For the service that i have used, it is required to send an APIkey in request for authentication. OOTB ServiceCredential does not has this attribute. Other attributes might be used if you do not want to extend the object.*
 
 * You can do that by importing the service_credentials.xml file in sites folder.	
 * Or do that manually by updating the ServiceCredential system object to add a custom attribute named 'weatherAPIKey' as string type.
