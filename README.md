@@ -1,3 +1,5 @@
+*To access the all the amazing learning resources, download the B2C Enablement Guide from [HERE](http://sfdc.co/b2cguide).*
+
 # Salesforce B2C Commerce Developer 101
 This repo serves as a reference point to all the developers who aspire to learn B2C Commerce Cloud -- understand the application development & exposure to all the essential platform features.
 Also, each branch in this repo ties back to the sessions in 'Developer Cert Prep' [Webinar Series](https://sfdc.co/devcertprepdetails)
@@ -11,14 +13,16 @@ This repo takes a practical approach to learning, let me introduce our fictious 
 * If customer has not set the account preference, then call a external web service to get the weather details for the customer's location of request.
 
 ## High Level Approach:
-* Exten the profile object to accommodate the weather preference, create a custom attribute.
-* Extend the Account controller to persist & retrieve this preference.
-* Make changes to the required ISMLs, Forms, Models, Resource Properties.
-* Implement a custom preference toggle to turn on/off this custom behaviour.
-* Extend the product system object to have a custom attribute which denotes the preferred weather for this product. Update the searchable attributes.
-* Implement an external service integration, if preference not set in account.
-* Make the changes to the search behaviour based on account preference or service response.
+*Learning objectives in Bold*
 
+* **System Object Changes** Exten the profile object to accommodate the weather preference, create a custom attribute.
+* **Etending a Controller** Extend the Account controller to persist & retrieve this preference.
+* **ISMLs, Forms, Models, Resource Properties** Make changes to the required ISMLs, Forms, Models, Resource Properties.
+* **Custom Preferences** Implement a custom preference toggle to turn on/off this custom behaviour.
+* **Custom Attributes** Extend the product system object to have a custom attribute which denotes the preferred weather for this product. Update the searchable attributes.
+* **Service Framework** Implement an external service integration, if preference not set in account.
+* **Search Modifications** Make the changes to the search behaviour based on account preference or service response.
+* **Payment Provider Integration** Implement PayPal as custom payment service provider.
 
 ## Branch Details:
 Each branch in this repo contains the changes required to a specific section/component of SFRA(Controllers, ISML...) or Platform(Metadata, Services...).
